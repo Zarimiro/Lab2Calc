@@ -23,11 +23,19 @@ double mult(int a, int b) {
 }
 
 double sub(int a, int b) {
+     if(b == 0)
+     {
+       throw "Error.Impossible to divide by zero";
+     }
 	return a/b;
 
 }
 
 unsigned int pow(int a, int b) {
+        if(b==0)
+	{
+	throw 1;
+	}
 	int i = 1;
 	unsigned int pow = a;
 	for (i = 1; i<b; i++) {
@@ -58,12 +66,27 @@ double sqrtb(int b) {
 }
 
 int main() {
-	int a=4, b=9;
+	int a, b;
+	cout << "Enter a,b:";
+	cin >>a;
+	cin >>b;
 	cout << "Sum:" << sum(a, b) << endl;
 	cout << "Dev:" << dev(a, b) << endl;
 	cout << "Mult:" << mult(a, b) << endl;
-	cout << "Sub:" << sub(a, b) << endl;
-	cout << "Pow a to b: " << pow(a, b) << endl;
+	try {
+		cout <<"Sub:"<<sub(a,b)<<endl;
+	}
+	catch (char *Err)
+	{
+		cout << Err << endl;
+	}
+        try {
+		cout << "Pow a to b: " << pow(a, b) << endl;
+	}
+	catch (int i)
+	{
+		cout << "Pow a to b:" << i << endl;
+	}
 	cout << "Sqrt a: " << sqrta(a) << endl;
 	cout << "Sqrt b: " << sqrtb(b) << endl;
 	_getch();

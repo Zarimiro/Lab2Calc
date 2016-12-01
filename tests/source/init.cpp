@@ -62,3 +62,12 @@ SCENARIO("calc sqrtb", "[sqrtb]") {
     
 	REQUIRE( sqrtb1 == 3);
 }
+SCENARIO("calc sub0", "[sub0]") {
+    int a = 3;
+    int b = 0;
+    
+    double sub0 = sub0( a, b );
+    
+	REQUIRE( sub0 == "Error.Impossible to divide by zero");
+}
+

@@ -42,9 +42,9 @@ SCENARIO("calc pow", "[pow]") {
     int a = 3;
     int b = 4;
     
-    unsigned int pow1 = pow( a, b );
+    double pow1 = pow( a, b );
     
-	REQUIRE( pow1 == 81);
+	REQUIRE( pow1 == 81.);
 }
 SCENARIO("calc power", "[pow]") {
     int a = 3;

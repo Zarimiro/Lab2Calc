@@ -46,6 +46,14 @@ SCENARIO("calc pow", "[pow]") {
     
 	REQUIRE( pow1 == 81);
 }
+SCENARIO("calc power", "[pow]") {
+    int a = 3;
+    int b = -2;
+    
+     double power1 = pow( a, b );
+    
+	REQUIRE( pow1 == 0.111111);
+}
 
 SCENARIO("calc sqrta", "[sqrta]") {
     int a = 4;

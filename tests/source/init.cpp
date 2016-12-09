@@ -54,7 +54,20 @@ SCENARIO("calc sqrta", "[sqrta]") {
     
 	REQUIRE( sqrta1 == 2);
 }
-
+SCENARIO("calc sqrtaa", "[sqrta]") {
+    int a = -4;
+   
+    int sqrtaa1 = sqrta(a);
+    
+	REQUIRE( sqrtaa1 == "Impossible");
+}
+SCENARIO("calc sqrtbb", "[sqrtb]") {
+    int b = -4;
+   
+    int sqrtbb1 = sqrta(b);
+    
+	REQUIRE( sqrtbb1 == "Impossible");
+}
 SCENARIO("calc sqrtb", "[sqrtb]") {
     int b = 9;
     

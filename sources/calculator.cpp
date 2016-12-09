@@ -31,13 +31,13 @@ double pow(int a, int b) {
 	if(b<0){
 		double pow=1.;
 		for(i=1;i<b;++i){
-		pow/=a;	
+		pow/=(double)a;	
 		}
 	}
 	else{
 		double pow = a;
 	for (i = 1; i<b; i++) {
-		pow *= a;
+		pow *=(double) a;
 
 	}}
 	return pow;

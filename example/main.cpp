@@ -24,8 +24,20 @@ int main() {
 	{
 		cout << "Pow a to b:" << i << endl;
 	}
+	try{
 	cout << "Sqrt a: " << sqrta(a) << endl;
-	cout << "Sqrt b: " << sqrtb(b) << endl;
+	}
+	catch (char *Errr)
+	{
+		cout<<Errr<<endl;
+	}
+	try{
+	cout << "Sqrt b: " << sqrta(a) << endl;
+	}
+	catch (char *Errrr)
+	{
+		cout<<Errrr<<endl;
+	}
 
 	return 0;
 

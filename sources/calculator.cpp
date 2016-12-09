@@ -26,12 +26,20 @@ unsigned int pow(int a, int b) {
 	{
 	throw 1;
 	}
-	int i = 1;
-	unsigned int pow = a;
+	
+	unsigned int i = 1;
+	if(b<0){
+		unsigned int pow=1;
+		for(i=1;i<b;++i){
+		pow/=a;	
+		}
+	}
+	else{
+		unsigned int pow = a;
 	for (i = 1; i<b; i++) {
 		pow *= a;
 
-	}
+	}}
 	return pow;
 }
 

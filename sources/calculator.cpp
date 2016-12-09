@@ -36,6 +36,10 @@ unsigned int pow(int a, int b) {
 }
 
 double sqrta(int a) {
+	if(a<0)
+	{
+	throw "Impossible"
+	}
 	unsigned int div = 1, rslt = 0;
 	while (a> 0)
 	{
@@ -46,6 +50,10 @@ double sqrta(int a) {
 
 }
 double sqrtb(int b) {
+	if(b<0)
+	{
+	throw "Impossible"
+	}
 	unsigned int div1 = 1, rslt1 = 0;
 	while (b> 0)
 	{

@@ -21,7 +21,7 @@ double sub(int a, int b) {
 
 }
 
-unsigned int pow(int a, int b) {
+double pow(int a, int b) {
         if(b==0)
 	{
 	throw 1;
@@ -29,13 +29,13 @@ unsigned int pow(int a, int b) {
 	
 	unsigned int i = 1;
 	if(b<0){
-		unsigned int pow=1;
+		double pow=1.;
 		for(i=1;i<b;++i){
 		pow/=a;	
 		}
 	}
 	else{
-		unsigned int pow = a;
+		double pow = a;
 	for (i = 1; i<b; i++) {
 		pow *= a;
 
